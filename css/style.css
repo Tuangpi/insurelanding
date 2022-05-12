@@ -176,6 +176,7 @@ nav ul li:last-child:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-y: hidden;
   margin-bottom: 8rem;
 }
 .third-section div:first-child {
@@ -210,6 +211,49 @@ nav ul li:last-child:hover {
 
 footer {
   background-color: var(--very-light-gray);
+  position: relative;
+  margin-bottom: 5rem;
+}
+footer .footer-bg {
+  background-image: url(../images/bg-pattern-footer-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 528px;
+  height: 231px;
+  position: absolute;
+  top: 0;
+}
+footer .footer-upper {
+  margin: auto;
+  padding-top: 4rem;
+  max-width: 78%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-upper div {
+  display: flex;
+  column-gap: 1rem;
+}
+footer .line {
+  margin: 1.9rem auto 2.1rem auto;
+  max-width: 78%;
+  height: 1px;
+  border: none;
+  outline: none;
+  background-color: #d7dfea;
+}
+footer .footer-bottom {
+  margin-top: 2rem;
+  margin: auto;
+  max-width: 78%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 12rem;
+}
+footer .footer-bottom h4 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
