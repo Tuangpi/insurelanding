@@ -1,0 +1,200 @@
+body {
+    font-family: Karla, "DM Serif Display", 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+nav {
+    margin: 1.6rem 0;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 1rem;
+        max-width: 78%;
+        margin: auto;
+
+        .logo {
+            margin-right: auto;
+            background-image: url(/images/logo.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 112px;
+            height: 18px;
+        }
+
+        li {
+            text-transform: uppercase;
+            list-style: none;
+        }
+        li:last-child{
+            padding: 0.4em 1.2em;
+            cursor: pointer;
+            border: 1px solid var(--dark-violet);
+        }
+        li:last-child:hover{
+            color: var(--very-light-gray);
+            background-color: var(--dark-violet);
+        }
+    }
+}
+
+.first-section{
+    background-color: var(--dark-violet);
+    margin-bottom: 18rem;
+    position: relative;
+    .intro-left{
+        position: absolute;
+        background-image: url(../images/bg-pattern-intro-left-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 195px;
+        height: 504px;
+        top: 21.8rem;
+        left: inherit;
+    }
+    .intro-right{
+        position: absolute;
+        background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 436px;
+        height: 593px;
+        top: -2rem;
+        right: 0;
+        overflow: hidden;
+    }
+}
+.first-section > div{
+    max-width: 78%;
+    margin: auto;
+    padding: 6rem 0;
+    position: relative;
+
+    .left{
+        max-width: 50%;
+
+        .line{
+            margin-bottom: 4rem;
+        }
+
+        h1{
+            font-family: "DM Serif Display";
+            font-size: 3.1rem;
+            line-height: 3rem;
+            color: var(--very-light-gray);
+            margin-bottom: 2rem;
+            letter-spacing: 0.1em;          
+        }
+
+        p{
+            color: var(--very-light-gray);
+            line-height: 1.6em;
+            margin-bottom: 1.6rem;
+        }
+        .line{
+            width: 30%;
+            height: 1px;
+            border: none;
+            outline: none;
+            background-color: var(--dark-gray-violet);
+        }
+        button{
+            background-color: transparent;
+            border: 1px solid var(--very-light-gray);
+            outline: none;
+            padding: 0.7rem 1.8rem;
+            color: var(--very-light-gray);
+        }
+        button:hover{
+            background-color: var(--very-light-gray);
+            color: var(--dark-violet);
+        }
+    }
+    .img-intro{
+        background-image: url(../images/image-intro-desktop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 540px;
+        height: 650px;
+        position: absolute;
+        top: 6rem;
+        right: 0;
+    }
+}
+.second-section{
+    margin-top: 1rem;
+    max-width: 78%;
+    margin: auto;
+    .line{
+        margin-bottom: 3.8rem;
+        width: 15%;
+        height: 1px;
+        border: none;
+        outline: none;
+        background-color: var(--dark-gray-violet);
+    }
+    h2{
+        font-size: 2.8rem;
+        margin-bottom: 3.5rem;
+    }
+    h3{
+        font-size: 1.6rem;
+        margin: 2rem 0;
+    }
+    div:last-child{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        // gap: 1.5rem;
+        column-gap: 1.5rem;
+    }
+    margin-bottom: 8rem;
+}
+.third-section{
+    margin: auto;
+    max-width: 78%;
+    background-color: var(--dark-violet);
+    position: relative;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div:first-child{
+        max-width: 32%;
+        font-size: 2rem;
+        color: var(--very-light-gray);
+
+    }
+    div:nth-of-type(2){
+        padding: 0.5em 1.8em;
+        background-color: transparent;
+        border: 1px solid var(--very-light-gray);
+        color: var(--very-light-gray);
+        cursor: pointer;
+        text-transform: uppercase;
+        z-index: 2;
+    }
+    div:nth-of-type(2):hover{
+        background-color: var(--very-light-gray);
+        color: var(--dark-violet);
+    }
+    div:last-child{
+        position: absolute;
+        background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 434px;
+        height: 250px;
+        top: 0;
+        right: 0;
+    }
+    margin-bottom: 8rem;
+}
+footer{
+    background-color: var(--very-light-gray);
+}
