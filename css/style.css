@@ -68,37 +68,40 @@ nav ul li:last-child:hover {
   background-size: cover;
   width: 195px;
   height: 504px;
-  top: 21.8rem;
+  top: 26rem;
   left: inherit;
 }
-.first-section .intro-right {
+
+.first-section::after {
+  content: "";
   position: absolute;
-  background-image: url(../images/bg-pattern-intro-right-desktop.svg);
-  background-position: center;
+  top: 0;
+  right: 0;
+  background: url(../images/bg-pattern-intro-right-desktop.svg);
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 436px;
-  height: 593px;
-  top: -2rem;
-  right: 0;
-  overflow: hidden;
+  width: 23rem;
+  height: 31.28rem;
+  z-index: 1;
 }
 
 .first-section > div {
   max-width: 78%;
   margin: auto;
-  padding: 6rem 0;
+  padding: 8rem 0;
   position: relative;
 }
 .first-section > div .left {
   max-width: 50%;
+  padding-right: 1.5rem;
 }
 .first-section > div .left .line {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 .first-section > div .left h1 {
   font-family: "DM Serif Display";
-  font-size: 3.1rem;
+  font-size: 3.6rem;
   line-height: 3rem;
   color: var(--very-light-gray);
   margin-bottom: 2rem;
@@ -135,7 +138,7 @@ nav ul li:last-child:hover {
   width: 540px;
   height: 650px;
   position: absolute;
-  top: 6rem;
+  top: 8rem;
   right: 0;
 }
 
@@ -185,13 +188,14 @@ nav ul li:last-child:hover {
   color: var(--very-light-gray);
 }
 .third-section div:nth-of-type(2) {
+  position: relative;
   padding: 0.5em 1.8em;
   background-color: transparent;
   border: 1px solid var(--very-light-gray);
   color: var(--very-light-gray);
   cursor: pointer;
   text-transform: uppercase;
-  z-index: 2;
+  z-index: 1;
 }
 .third-section div:nth-of-type(2):hover {
   background-color: var(--very-light-gray);
@@ -225,6 +229,8 @@ footer .footer-bg {
   top: 0;
 }
 footer .footer-upper {
+  position: relative;
+  z-index: 1;
   margin: auto;
   padding-top: 4rem;
   max-width: 78%;
@@ -236,6 +242,8 @@ footer .footer-upper div {
   column-gap: 1rem;
 }
 footer .line {
+  position: relative;
+  z-index: 1;
   margin: 1.9rem auto 2.1rem auto;
   max-width: 78%;
   height: 1px;
@@ -244,6 +252,8 @@ footer .line {
   background-color: #d7dfea;
 }
 footer .footer-bottom {
+  position: relative;
+  z-index: 1;
   margin-top: 2rem;
   margin: auto;
   max-width: 78%;
@@ -251,8 +261,12 @@ footer .footer-bottom {
   justify-content: space-between;
   padding-right: 12rem;
 }
+footer .footer-bottom div {
+  margin-top: 0.6rem;
+  cursor: pointer;
+}
 footer .footer-bottom h4 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
   text-transform: uppercase;
 }
 
