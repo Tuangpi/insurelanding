@@ -45,12 +45,12 @@ nav ul li {
   text-transform: uppercase;
   list-style: none;
 }
-nav ul li:last-child {
+nav ul .view-plans {
   padding: 0.4em 1.2em;
   cursor: pointer;
   border: 1px solid var(--dark-violet);
 }
-nav ul li:last-child:hover {
+nav ul .view-plans:hover {
   color: var(--very-light-gray);
   background-color: var(--dark-violet);
 }
